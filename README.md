@@ -1,14 +1,12 @@
-## TimeTrackingBackend Instructions to run the database code first, using postman, and unit test.
+## Prereq
+1. Install Visual Studio (.net core 2.1)
+1. Install Sql Server
 
+## TimeTrackingBackend Instructions to run the database code first, using postman, and unit test.
 1. Open TimeTrackingBackEnd -> open Package Manager Console
 1. Type ``add-migration migration_name``
 1.  Type ``update-database``. The database will be created in your local. Note(Database used is MS Sql).
 1.  Check database in you local.
-
-## Prereq
-
-1. Install Visual Studio (.net core 2.1)
-1. Install Sql Server
 
 ## How to run the application
 1. Open both solutions TimeTrackingBackEnd and TimeTrackingFrontEnd
