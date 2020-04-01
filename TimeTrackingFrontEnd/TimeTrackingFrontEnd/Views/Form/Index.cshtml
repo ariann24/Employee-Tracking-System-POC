@@ -1,0 +1,82 @@
+﻿@model TimeTrackingFrontEnd.Models.EmployeeModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication1</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <label>&nbsp;&nbsp;&nbsp;</label>
+    <h2>Employee Form</h2>
+    @using (Html.BeginForm("Index", "Form"))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        if (@ViewBag.Message != null)
+        {
+
+            <div style="border:1px solid red">
+                @ViewBag.Message
+            </div>
+        }
+
+        <table>
+            <tr>
+                <td>@Html.LabelFor(a => a.UserId)</td>
+                <td>@Html.TextBoxFor(a => a.UserId, new { @readonly = "readonly" })</td>
+                <td>@Html.ValidationMessageFor(a => a.UserId)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(a => a.NameOfEmployee)</td>
+                <td>@Html.TextBoxFor(a => a.NameOfEmployee)</td>
+                <td>@Html.ValidationMessageFor(a => a.NameOfEmployee)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(a => a.ClockInTime)</td>
+                <td>@Html.TextBoxFor(a => a.ClockInTime, new { type = "datetime" })</td>
+                <td>@Html.ValidationMessageFor(a => a.ClockInTime)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(a => a.ClockOutTime)</td>
+                <td>@Html.TextBoxFor(a => a.ClockOutTime, new { type = "datetime" })</td>
+                <td>@Html.ValidationMessageFor(a => a.ClockOutTime)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(a => a.Active)</td>
+                <td>@Html.CheckBoxFor(a => a.Active)</td>
+                <td>@Html.ValidationMessageFor(a => a.Active)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Save" name="button" class="btn btn-primary" />
+                    <input type="submit" value="Delete" name="button" class="btn btn-primary" />
+                    <input type="submit" value="Clear all to save new" name="button" class="btn btn-primary" />
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    }
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ariann.amores\\source\\repos\\TimeTrackingBackEnd\\TimeTrackingUnitTest\\TimeTrackingUnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ariann.amores\\source\\repos\\TimeTrackingBackEnd\\TimeTrackingUnitTest\\TimeTrackingUnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ariann.amores\\source\\repos\\TimeTrackingBackEnd\\TimeTrackingUnitTest\\TimeTrackingUnitTest.csproj",
+        "projectName": "TimeTrackingUnitTest",
+        "projectPath": "C:\\Users\\ariann.amores\\source\\repos\\TimeTrackingBackEnd\\TimeTrackingUnitTest\\TimeTrackingUnitTest.csproj",
+        "packagesPath": "C:\\Users\\ariann.amores\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ariann.amores\\source\\repos\\TimeTrackingBackEnd\\TimeTrackingUnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ariann.amores\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ariann.amores\\Desktop\\GIT\\DeviceOwnership\\Willow-Cloud-OwnershipManagement\\DeviceOwnershipManagement\\bin": {},
+          "C:\\Users\\ariann.amores\\Desktop\\GIT\\NewServiceLibraryAsIn\\Willow-Cloud-Library\\ServiceLibrary\\bin\\Debug": {},
+          "C:\\Users\\ariann.amores\\source\\repos\\IoTHubGetStarted\\CreateIdentities": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
